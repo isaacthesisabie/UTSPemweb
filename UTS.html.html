@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="UTS.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Konversi Satuan Panjang</h1>
+    <div class="converter-box">
+      <input type="number" id="inputValue" placeholder="Masukkan Nilai" />
+      
+      <select id="inputUnit">
+        <option value="meter">Meter</option>
+        <option value="kilometer">Kilometer</option>
+        <option value="centimeter">Centimeter</option>
+        <option value="mile">Mile</option>
+      </select>
+
+      <span>to</span>
+
+      <select id="outputUnit">
+        <option value="meter">Meter</option>
+        <option value="kilometer">Kilometer</option>
+        <option value="centimeter">Centimeter</option>
+        <option value="mile">Mile</option>
+      </select>
+
+      <button onclick="convert()">Konversi</button>
+
+      <h2>Hasil: <span id="result">0</span></h2>
+    </div>
+  </div>
+
+  <script src="UTS.js"></script>
+</body>
+</html>
